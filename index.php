@@ -15,7 +15,7 @@
     <link href="https://fonts.googleapis.com/css?family=Lato%7cUbuntu" rel="stylesheet"> 
     
     <!-- Edit the name of your style sheet - 'foo' is not a valid name!! -->
-    <link rel="stylesheet" href="no_side.css"> 
+    <link rel="stylesheet" href="css/no_side.css"> 
     
 </head>
     
@@ -30,7 +30,7 @@
         <!-- logo image linking to home page goes here -->
         <a href="index.php">
             <div class="box logo"  title="Logo - Click here to go to the Home Page">
-            <img class="img-circle" src="images/gen_logo.png" width="150" height="150" alt="generic logo" />
+            <img class="img-circle" src="images/book_logo.jpg" width="150" height="117" alt="generic logo" />
             
             </div>    <!-- / logo -->
         </a>
