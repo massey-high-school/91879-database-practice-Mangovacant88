@@ -10,13 +10,12 @@ body {
 
 .wrapper {
     display: grid;
-    grid-template-columns: 1fr;
+    grid-template-columns:250px 1fr;
     grid-template-rows: auto;
     grid-template-areas: 
-        "banner"
-        "nav"
-        "main"
-        "footer";
+        "banner banner"
+        "side main"
+        "footer footer";
         grid-gap: 4px;
     
 }
@@ -28,9 +27,8 @@ body {
 
 .box {
     padding: 20px;
-    /* border-radius: 10px; */
-    background-color: #ddd;
-}
+    border-radius: 10px;
+    }
 
 /* Area colouring... */
 
@@ -63,6 +61,13 @@ body {
     text-align: center;
 }
 
+.side {
+    grid: side;
+    background-color: purple;
+    color: white;
+    
+}
+
 .main {
     grid-area: main;
     background-color: #EEE;  /* very pale grey */
@@ -81,10 +86,10 @@ h1, h2, h3, h4 {
     font-family: 'Ubuntu', sans-serif;
 }
 
-/* Navigation Links */
-.nav a {font-weight: bold;}
-.nav a:link, .nav a:visited {color: #AA0000;} /*dark red */
-.nav a:hover {color: #604830; text-decoration: none;} /* chocolate brown */
+/* Side Links */
+a.side {font-weight: bold; text-decoration: none;}
+a.side:link, .nav a:visited {color: #ffc2fc;} /*purple */
+a.side:hover {color: #ffedbd;} /* purple */
 
 
 /* links in page */
