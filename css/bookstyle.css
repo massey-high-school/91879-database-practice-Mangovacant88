@@ -34,7 +34,7 @@ body {
 
 /* logo, banner and footer background are the same */
 .logo, .banner, .footer {
-    background-color: #888;  /* dark grey */
+    background-color: #c92cf5;  /* pink */
 }
 
 /* Set font on dark areas to white */
@@ -70,7 +70,7 @@ body {
 
 .main {
     grid-area: main;
-    background-color: #EEE;  /* very pale grey */
+    background-color: #9748e0; /* purple */
     border: solid 1px #CCC;
 }
 
@@ -123,9 +123,19 @@ a:hover{color: #000;}    /* Black*/
     font-weight: bold;
 }
 
+/* Results Box Formatting */
+.results {
+    background-color: #c876e3; /* light pink/purple */
+    border-radius: 10px;
+    border: 1px solid #000;
+    padding: 5px;
+}
 
+/* form formatting */
 
-
+search {
+    width: 200px;
+}
 
 
 

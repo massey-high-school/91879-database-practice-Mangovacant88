@@ -1,6 +1,23 @@
 <!DOCTYPE HTML>
 
 <html lang="en">
+    
+<?php
+    
+    session_start();
+    include("config.php");
+    
+    // Connect to database...
+    
+    $dbconnect=mysqli_connect(DB_HOST, DB_USERNAME, DB_PASSWORD, DB_NAME);
+    
+    if (mysqli_connect_error())
+    {
+        echo "Connection failed:".mysqli_connect_error();
+         exit;
+    }
+    
+?>
 
 <head>
     <meta charset="UTF-8">
@@ -38,27 +55,5 @@
             <h1>Orchid Reading</h1>
         </div>    <!-- / banner -->
 
-        <!-- Navigation goes here.  Edit BOTH the file name and the link name -->
-        <!--
-        <div class="box nav">
-            <a href="index.html">Home</a> | 
-            <a href="page1.html">Page 1</a> | 
-            <a href="page2.html">Page 2</a> | 
-            <a href="page3.html">Page 3</a> | 
-            <a href="contact.html">Contact</a>
-        </div>    <!-- / nav -->        
+
         
-        <div class="box side">
-            
-        <h2>Search | <a class="side" href="showall.php">Show All</a></h2>
-            
-        <p><i>Type part of the title / author name if desired</i></p>
-        
-        <hr />
-        
-        Title Search<br />
-        Author Search<br />
-        Genre Search<br />
-        Ration Search
-            
-        </div>      <!-- / side bar -->
